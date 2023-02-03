@@ -11,6 +11,8 @@ app.get('/test', (req, res) => {
 	res.send('test works');
 });
 
-app.listen(port, () =>
-	console.log(`listening on port http://localhost:${port}`)
-);
+// app.listen(port, () =>
+// 	console.log(`listening on port http://localhost:${port}`)
+// );
+
+export default app;
