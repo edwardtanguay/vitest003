@@ -1,18 +1,7 @@
-import express from 'express';
+import app from './app.js';
 
 const port = 4111;
-const app = express();
 
-app.get('/', (req, res) => {
-	res.send('this is the API');
-});
-
-app.get('/test', (req, res) => {
-	res.send('test works');
-});
-
-// app.listen(port, () =>
-// 	console.log(`listening on port http://localhost:${port}`)
-// );
-
-export default app;
+app.listen(port, () =>
+	console.log(`listening on port http://localhost:${port}`)
+);
